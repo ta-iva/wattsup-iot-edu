@@ -1,2 +1,2 @@
-# WattsUp IoT solution
+## WattsUp IoT solution
 - for educational purposes - physics school projects
