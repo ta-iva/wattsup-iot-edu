@@ -1,0 +1,1491 @@
+[
+    {
+        "id": "be41ec2934fe43be",
+        "type": "tab",
+        "label": "Test playground",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6a4801fcf6da28cf",
+        "type": "tab",
+        "label": "Test api",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8e37c40e5630e2fa",
+        "type": "tab",
+        "label": "INIT Auth",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "59c5aa8651bd3ccf",
+        "type": "tab",
+        "label": "Flow WattsUp",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bd9173e4a21fcf57",
+        "type": "serial-port",
+        "name": "COM5",
+        "serialport": "COM5",
+        "serialbaud": "9600",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "a51ad6eea1b705cf",
+        "type": "mongodb",
+        "hostname": "localhost:27017",
+        "topology": "direct",
+        "connectOptions": "",
+        "port": 27017,
+        "db": "DB_WATTSUP",
+        "name": ""
+    },
+    {
+        "id": "a665b498031106f4",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "home",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "62b81d4ea9b931cc",
+        "type": "serial-port",
+        "z": "59c5aa8651bd3ccf",
+        "name": "COM3",
+        "serialport": "COM3",
+        "serialbaud": "9600",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "6c2af91e0028ba6f",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#cd5532",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#5959ff",
+                "baseFont": "Trebuchet MS,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#5959ff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#5959ff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#959595",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#a5a5ff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#2e2e2e",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#5959ff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#cecece",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Trebuchet MS,Helvetica,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "WattsUp Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2e63a09ae1f1bb03",
+        "type": "ui_tab",
+        "name": "WattsUp Dashboard",
+        "icon": "trending_up",
+        "order": 1,
+        "disabled": false,
+        "hidden": true
+    },
+    {
+        "id": "e92ee6c305299bae",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "2e63a09ae1f1bb03",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0bf5031946040c58",
+        "type": "ui_group",
+        "name": "Gauges",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5aa41db95d3f1593",
+        "type": "ui_group",
+        "name": "Gauges",
+        "tab": "2e63a09ae1f1bb03",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4f6824fe8dd0e167",
+        "type": "ui_group",
+        "name": "Gauges",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "190407235caaadb8",
+        "type": "ui_link",
+        "name": "WattsUp app",
+        "link": "https://uu-wattsup.onrender.com",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
+    },
+    {
+        "id": "83e0ce76b42c21ce",
+        "type": "ui_group",
+        "name": "Power",
+        "tab": "2e63a09ae1f1bb03",
+        "order": 4,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a702c757cef680d",
+        "type": "ui_spacer",
+        "z": "59c5aa8651bd3ccf",
+        "name": "spacer",
+        "group": "",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "ed7ce61475748850",
+        "type": "ui_spacer",
+        "z": "59c5aa8651bd3ccf",
+        "name": "spacer",
+        "group": "",
+        "order": 1,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "ec4578875a2d5954",
+        "type": "ui_spacer",
+        "z": "59c5aa8651bd3ccf",
+        "name": "spacer",
+        "group": "e92ee6c305299bae",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a75221a51c8b9ba8",
+        "type": "ui_spacer",
+        "z": "59c5aa8651bd3ccf",
+        "name": "spacer",
+        "group": "e92ee6c305299bae",
+        "order": 6,
+        "width": "6",
+        "height": "2"
+    },
+    {
+        "id": "2b88637663dac729",
+        "type": "ui_spacer",
+        "z": "59c5aa8651bd3ccf",
+        "name": "spacer",
+        "group": "5aa41db95d3f1593",
+        "order": 2,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "96c4436e1b25f265",
+        "type": "ui_spacer",
+        "z": "59c5aa8651bd3ccf",
+        "name": "spacer",
+        "group": "5aa41db95d3f1593",
+        "order": 4,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "68c3bd793e9575ca",
+        "type": "ui_spacer",
+        "z": "59c5aa8651bd3ccf",
+        "name": "spacer",
+        "group": "e92ee6c305299bae",
+        "order": 9,
+        "width": "6",
+        "height": "3"
+    },
+    {
+        "id": "49e02643.12584c",
+        "type": "inject",
+        "z": "be41ec2934fe43be",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "payload",
+        "payloadType": "msg",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60239b0f.f67744",
+        "type": "function",
+        "z": "be41ec2934fe43be",
+        "name": "Generate Random Values",
+        "func": "msg.payload = {\n    value1: Math.random(),\n    value2: Math.random(),\n    value3: Math.random()\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 220,
+        "wires": [
+            [
+                "debug",
+                "33dd1df186667b3b"
+            ]
+        ]
+    },
+    {
+        "id": "debug",
+        "type": "debug",
+        "z": "be41ec2934fe43be",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c7ca00e15b61afab",
+        "type": "http in",
+        "z": "be41ec2934fe43be",
+        "name": "",
+        "url": "/test",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "60239b0f.f67744"
+            ]
+        ]
+    },
+    {
+        "id": "db5cf21b745ef885",
+        "type": "http response",
+        "z": "be41ec2934fe43be",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "33dd1df186667b3b",
+        "type": "template",
+        "z": "be41ec2934fe43be",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload.value1: {{payload.value1}} !\nThis is the payload.value1: {{payload.value2}} !\n",
+        "output": "str",
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "db5cf21b745ef885"
+            ]
+        ]
+    },
+    {
+        "id": "70130e0971ec21bf",
+        "type": "trigger",
+        "z": "be41ec2934fe43be",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "10",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 130,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d339bd845e8b7f0",
+        "type": "inject",
+        "z": "6a4801fcf6da28cf",
+        "d": true,
+        "name": "",
+        "props": [],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "a72268a8c95bf666"
+            ]
+        ]
+    },
+    {
+        "id": "a72268a8c95bf666",
+        "type": "function",
+        "z": "6a4801fcf6da28cf",
+        "name": "Random gen",
+        "func": "// Pevná identifikace zařízení a generátorů\nconst gatewayId = \"6797ff20f77e975db67abbee\";\nconst generatorIds = {\n    \"Solar Panel\": \"676546c3c2a7bc4c6bbc3934\",\n    \"Wind Turbine Generator\": \"676546bac2a7bc4c6bbc3932\"\n};\n\n// Náhodné hodnoty výkonu v rozsahu 0-200 W pro oba generátory\nconst generatePower = (min, max) => (Math.random() * (max - min) + min).toFixed(2);\n\n// Vytvoření těla requestu\nmsg.payload = {\n    gatewayId: gatewayId,\n    roundOrder: 1,  // Můžeš přizpůsobit podle potřeby\n    timestamp: new Date().toISOString(),\n    generatorData: [\n        {\n            generatorId: generatorIds[\"Solar Panel\"],\n            value: parseFloat(generatePower(0, 12))  // Náhodné hodnoty mezi 50–150 W\n        },\n        {\n            generatorId: generatorIds[\"Wind Turbine Generator\"],\n            value: parseFloat(generatePower(0, 6))  // Náhodné hodnoty mezi 10–50 W\n        }\n    ]\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            [
+                "83b0646372965b04"
+            ]
+        ]
+    },
+    {
+        "id": "3e738f0650112271",
+        "type": "debug",
+        "z": "6a4801fcf6da28cf",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "83b0646372965b04",
+        "type": "http request",
+        "z": "6a4801fcf6da28cf",
+        "name": "data",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "body",
+        "url": "https://unicornunicersity-wattsup-be-test.azurewebsites.net/api/gateway/v2/679e3c67f9656fa1dd8c8233/data",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "x-api-key",
+                "valueType": "other",
+                "valueValue": "API-Secret-Key"
+            },
+            {
+                "keyType": "Authorization",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "UwPHYKB583F4DvRcXQSudbnCzrJNMp2t"
+            }
+        ],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "3e738f0650112271"
+            ]
+        ]
+    },
+    {
+        "id": "7c2f344b04765c93",
+        "type": "inject",
+        "z": "6a4801fcf6da28cf",
+        "name": "test crypto",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"gatewayId\":\"6797ff20f77e975db67abbee\"}",
+        "payloadType": "json",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "3d1474568ab19cfc"
+            ]
+        ]
+    },
+    {
+        "id": "3d1474568ab19cfc",
+        "type": "function",
+        "z": "6a4801fcf6da28cf",
+        "name": "fce crypto",
+        "func": "\nconst body = msg.payload;\nconst secret = \"UwPHYKB583F4DvRcXQSudbnCzrJNMp2t\";\n\nconst hash = global.crypto.createHmac('sha256', secret)\n                   .update(body)\n                   .digest('base64');\n\nmsg.hmac = hash;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 480,
+        "wires": [
+            [
+                "2a52143f1049a344"
+            ]
+        ]
+    },
+    {
+        "id": "2a52143f1049a344",
+        "type": "debug",
+        "z": "6a4801fcf6da28cf",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "1d8e078eba2e01ba",
+        "type": "http request",
+        "z": "8e37c40e5630e2fa",
+        "name": "HTTP: Init",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://unicornunicersity-wattsup-be-test.azurewebsites.net/api/gateway/v2/init",
+        "tls": "",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "application/json",
+                "valueValue": ""
+            },
+            {
+                "keyType": "other",
+                "keyValue": "x-api-key",
+                "valueType": "other",
+                "valueValue": "API-Secret-Key"
+            },
+            {
+                "keyType": "Authorization",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "UwPHYKB583F4DvRcXQSudbnCzrJNMp2t"
+            }
+        ],
+        "x": 400,
+        "y": 260,
+        "wires": [
+            [
+                "bd92033c7306a49e",
+                "c0b55482459dea3a"
+            ]
+        ]
+    },
+    {
+        "id": "bd92033c7306a49e",
+        "type": "debug",
+        "z": "8e37c40e5630e2fa",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "737a6a024b80b8d3",
+        "type": "ui_button",
+        "z": "8e37c40e5630e2fa",
+        "name": "  INIT Auth",
+        "group": "e92ee6c305299bae",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Project initiation",
+        "tooltip": "",
+        "color": "rgb(26, 26, 26)",
+        "bgcolor": "rgb(255, 166, 89)",
+        "className": "",
+        "icon": "cloud_upload",
+        "payload": "{\"gatewayId\":\"6797ff20f77e975db67abbee\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 260,
+        "wires": [
+            [
+                "1d8e078eba2e01ba"
+            ]
+        ]
+    },
+    {
+        "id": "c0b55482459dea3a",
+        "type": "change",
+        "z": "8e37c40e5630e2fa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "projectID",
+                "pt": "global",
+                "to": "payload.projectID",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 320,
+        "wires": [
+            [
+                "e59ecd6a0f0cf8d8"
+            ]
+        ]
+    },
+    {
+        "id": "e59ecd6a0f0cf8d8",
+        "type": "debug",
+        "z": "8e37c40e5630e2fa",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload.projectId",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "669889d8a5b3fd44",
+        "type": "serial in",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Sensor data",
+        "serial": "62b81d4ea9b931cc",
+        "x": 190,
+        "y": 340,
+        "wires": [
+            [
+                "58304322eaa8b485"
+            ]
+        ]
+    },
+    {
+        "id": "b5842276dc448f3c",
+        "type": "mongodb in",
+        "z": "59c5aa8651bd3ccf",
+        "mongodb": "a51ad6eea1b705cf",
+        "name": "MongoDB in (batch data)",
+        "collection": "3ch_data_agg",
+        "operation": "find",
+        "x": 390,
+        "y": 800,
+        "wires": [
+            [
+                "09948441c7c7bebd",
+                "1e4e71bbc2bb2572"
+            ]
+        ]
+    },
+    {
+        "id": "58304322eaa8b485",
+        "type": "json",
+        "z": "59c5aa8651bd3ccf",
+        "name": "JSON to JS object",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "a57ce3e2c2d87b05"
+            ]
+        ]
+    },
+    {
+        "id": "a57ce3e2c2d87b05",
+        "type": "function",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Compute power",
+        "func": "// Input message payload: parsed JSON object from Node-RED JSON node\n// Example:\n// msg.payload = {\n//   \"INA219a\": { \"napetiVstup\": 12.34, \"napetiBocnik\": 23.45, \"napetiZatez\": 12.37, \"proud\": 150.67 },\n//   \"INA219b\": { \"napetiVstup\": 11.87, \"napetiBocnik\": 22.34, \"napetiZatez\": 11.89, \"proud\": 145.32 }\n// };\n\n// Initialize an output object for calculated powers\nlet powerData = {};\n\nlet adjust = Math.random() * 1.5;\nmsg.payload.INA219a.napetiZatez = (msg.payload.INA219a.napetiZatez * 7) + adjust;\nmsg.payload.INA219a.proud = msg.payload.INA219a.proud /15 + adjust * 30;\n// msg.payload.INA219a.napetiZatez = 0;\n// msg.payload.INA219a.proud = 0;\n\nmsg.payload.INA219b.proud = msg.payload.INA219b.proud * 4 + 1000 - Math.random() * 40;\n// msg.payload.INA219b.proud = 50;\n\n// Iterate through each sensor in the input payload\nfor (let sensor in msg.payload) {\n    if (msg.payload.hasOwnProperty(sensor)) {\n        // Extract load voltage and load current for the sensor\n        let loadVoltage = msg.payload[sensor].napetiZatez;\n        let loadCurrent = msg.payload[sensor].proud;\n\n        // Compute power for the sensor\n        let power = Math.abs(loadVoltage) * Math.abs(loadCurrent)/1000;\n\n        // Add computed power to the output object\n        powerData[sensor] = {\n            ...msg.payload[sensor], // Include original data for the sensor\n            power: power // Add computed power\n        };\n    }\n}\n\n// Set the new payload with power calculations\nmsg.payload = powerData;\n\n// Return the modified message\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 340,
+        "wires": [
+            [
+                "3dc092f6da0c21c9",
+                "db6212b72ee3352d",
+                "477e5b51b6d10a6f"
+            ]
+        ]
+    },
+    {
+        "id": "3dc092f6da0c21c9",
+        "type": "function",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Aggregation",
+        "func": "const windowSize = 10; // Počet zpráv (1 zpráva za sekundu -> 10 sekund)\nconst powerSums = {};\nconst count = {};\n\nif (!context.storage) {\n    context.storage = {};\n}\n\nfor (const sensor in msg.payload) {\n    if (!context.storage[sensor]) {\n        context.storage[sensor] = { sum: 0, count: 0 };\n    }\n    \n    const napetiVstup = msg.payload[sensor].napetiVstup;\n    const proud = msg.payload[sensor].proud;\n    const power = (Math.abs(napetiVstup) * Math.abs(proud)) / 1000; // Výkon ve wattech\n    \n    context.storage[sensor].sum += power;\n    context.storage[sensor].count += 1;\n}\n\nif (context.storage[Object.keys(msg.payload)[0]].count >= windowSize) {\n    const avgPayload = {};\n    \n    for (const sensor in context.storage) {\n        avgPayload[sensor] = {\n            avgPower: context.storage[sensor].sum / context.storage[sensor].count\n        };\n        \n        // Resetování pro další okno\n        context.storage[sensor].sum = 0;\n        context.storage[sensor].count = 0;\n    }\n    \n    msg.payload = avgPayload;\n    return msg;\n} else {\n    return null; // Čeká se na dostatek vzorků\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 340,
+        "wires": [
+            [
+                "41e5402f63d21119",
+                "2098e49ef2e4452f",
+                "6d4494e17d50e03c",
+                "a48333d3bf869805"
+            ]
+        ]
+    },
+    {
+        "id": "507cf1407fdc64f3",
+        "type": "mongodb out",
+        "z": "59c5aa8651bd3ccf",
+        "mongodb": "a51ad6eea1b705cf",
+        "name": "MongoDB insert",
+        "collection": "agg_3ch_measurements",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 1100,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "41e5402f63d21119",
+        "type": "function",
+        "z": "59c5aa8651bd3ccf",
+        "name": "MongoDB transformation",
+        "func": "// Přidání timestampu pro každý záznam\nlet timestamp = new Date().toISOString();\n\n// Převod dat do pole dokumentů\nlet data = [\n    {\n        sensorId: \"INA219a\",\n        avgPower: msg.payload.INA219a.avgPower,\n        timestamp: timestamp\n    },\n    {\n        sensorId: \"INA219b\",\n        avgPower: msg.payload.INA219b.avgPower,\n        timestamp: timestamp\n    }\n];\n\n// Nastavení pro MongoDB insert\nmsg.payload = data;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 180,
+        "wires": [
+            [
+                "507cf1407fdc64f3"
+            ]
+        ]
+    },
+    {
+        "id": "4bd2ea2b90133173",
+        "type": "http request",
+        "z": "59c5aa8651bd3ccf",
+        "name": "HTTP: data",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://unicornunicersity-wattsup-be-test.azurewebsites.net/api/gateway/v2/679e3c67f9656fa1dd8c8233/data",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "x-api-key",
+                "valueType": "other",
+                "valueValue": "API-Secret-Key"
+            },
+            {
+                "keyType": "Authorization",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "UwPHYKB583F4DvRcXQSudbnCzrJNMp2t"
+            }
+        ],
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "765c33fb4222ecbd"
+            ]
+        ]
+    },
+    {
+        "id": "59e431d53abe8df8",
+        "type": "ui_gauge",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Current: Fan",
+        "group": "5aa41db95d3f1593",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Current: Fan",
+        "label": "mA",
+        "format": "{{value | number:2}} mA",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "89bc1062263e1240",
+        "type": "ui_gauge",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Voltage: Fan",
+        "group": "5aa41db95d3f1593",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Voltage: Fan",
+        "label": "V",
+        "format": "{{value | number:2}} V",
+        "min": 0,
+        "max": "8",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 710,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "0c270b898ca352a5",
+        "type": "ui_chart",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Power: Fan",
+        "group": "83e0ce76b42c21ce",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Power (W): Fan",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "0.08",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db6212b72ee3352d",
+        "type": "change",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Current to payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.INA219a.proud",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 420,
+        "wires": [
+            [
+                "59e431d53abe8df8"
+            ]
+        ]
+    },
+    {
+        "id": "477e5b51b6d10a6f",
+        "type": "change",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Voltage to payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.INA219a.napetiZatez",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 540,
+        "wires": [
+            [
+                "89bc1062263e1240"
+            ]
+        ]
+    },
+    {
+        "id": "94786ceda571ccff",
+        "type": "ui_chart",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Power: Solar panel",
+        "group": "83e0ce76b42c21ce",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Power (W): Solar panel",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1.5",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#fef03f",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d4494e17d50e03c",
+        "type": "change",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Power to payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.INA219a.avgPower",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 420,
+        "wires": [
+            [
+                "0c270b898ca352a5"
+            ]
+        ]
+    },
+    {
+        "id": "a48333d3bf869805",
+        "type": "change",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Power to payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.INA219b.avgPower",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 540,
+        "wires": [
+            [
+                "94786ceda571ccff"
+            ]
+        ]
+    },
+    {
+        "id": "2098e49ef2e4452f",
+        "type": "function",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Format payload",
+        "func": "let payload = msg.payload;\n\nlet formattedPayload = {\n    gatewayId: \"6797ff20f77e975db67abbee\",\n    roundOrder: 2,\n    timestamp: new Date().toISOString(), // Automatické doplnění aktuálního času\n    generatorData: [\n        {\n            generatorId: \"676546c3c2a7bc4c6bbc3934\",\n            value: parseFloat(payload.INA219a?.avgPower) || 0\n        },\n        {\n            generatorId: \"676546bac2a7bc4c6bbc3932\",\n            value: parseFloat(payload.INA219b?.avgPower) || 0\n        }\n    ]\n};\n\n// Předejme upravený payload dál\nmsg.payload = formattedPayload;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "4bd2ea2b90133173"
+            ]
+        ]
+    },
+    {
+        "id": "765c33fb4222ecbd",
+        "type": "debug",
+        "z": "59c5aa8651bd3ccf",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "83ae6e29e2455b9c",
+        "type": "http request",
+        "z": "59c5aa8651bd3ccf",
+        "name": "HTTP: updateState",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://unicornunicersity-wattsup-be-test.azurewebsites.net/api/gateway/v2/round/updateState",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "x-api-key",
+                "valueType": "other",
+                "valueValue": "API-Secret-Key"
+            },
+            {
+                "keyType": "Authorization",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "UwPHYKB583F4DvRcXQSudbnCzrJNMp2t"
+            }
+        ],
+        "x": 370,
+        "y": 700,
+        "wires": [
+            [
+                "178b91293b6b9d9c"
+            ]
+        ]
+    },
+    {
+        "id": "178b91293b6b9d9c",
+        "type": "debug",
+        "z": "59c5aa8651bd3ccf",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "be32d5ca7becc26c",
+        "type": "ui_button",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Round completed",
+        "group": "e92ee6c305299bae",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Round completed",
+        "tooltip": "",
+        "color": "rgb(26, 26, 26)",
+        "bgcolor": "rgb(255, 89, 89)",
+        "className": "",
+        "icon": "power_settings_new",
+        "payload": "{\"projectId\":\"679e3c67f9656fa1dd8c8233\",\"roundOrder\":1,\"status\":\"completed\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 150,
+        "y": 700,
+        "wires": [
+            [
+                "83ae6e29e2455b9c"
+            ]
+        ]
+    },
+    {
+        "id": "f1774be6dd8e26cd",
+        "type": "http request",
+        "z": "59c5aa8651bd3ccf",
+        "name": "HTTP: updateState",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://unicornunicersity-wattsup-be-test.azurewebsites.net/api/gateway/v2/round/updateState",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "x-api-key",
+                "valueType": "other",
+                "valueValue": "API-Secret-Key"
+            },
+            {
+                "keyType": "Authorization",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "UwPHYKB583F4DvRcXQSudbnCzrJNMp2t"
+            }
+        ],
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "0ee3d3a5cb855a65"
+            ]
+        ]
+    },
+    {
+        "id": "0ee3d3a5cb855a65",
+        "type": "debug",
+        "z": "59c5aa8651bd3ccf",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e0c1bca4c279364d",
+        "type": "ui_button",
+        "z": "59c5aa8651bd3ccf",
+        "name": "Round start",
+        "group": "e92ee6c305299bae",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Round start",
+        "tooltip": "",
+        "color": "rgb(26, 26, 26)",
+        "bgcolor": "rgb(89, 255, 89)",
+        "className": "",
+        "icon": "forward",
+        "payload": "{\"projectId\":\"679e3c67f9656fa1dd8c8233\",\"roundOrder\":2,\"status\":\"active\"}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 440,
+        "wires": [
+            [
+                "f1774be6dd8e26cd"
+            ]
+        ]
+    },
+    {
+        "id": "646e8f3abf9363fd",
+        "type": "ui_digital_clock",
+        "z": "59c5aa8651bd3ccf",
+        "name": "",
+        "group": "e92ee6c305299bae",
+        "order": 8,
+        "width": "4",
+        "height": "2",
+        "x": 270,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e9619ab8d84e74b1",
+        "type": "csv",
+        "z": "59c5aa8651bd3ccf",
+        "name": "JS to CVS",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 820,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e4e71bbc2bb2572",
+        "type": "json",
+        "z": "59c5aa8651bd3ccf",
+        "name": "JSON to JS object",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 630,
+        "y": 840,
+        "wires": [
+            [
+                "e9619ab8d84e74b1"
+            ]
+        ]
+    },
+    {
+        "id": "09948441c7c7bebd",
+        "type": "http request",
+        "z": "59c5aa8651bd3ccf",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 630,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d95e58b4e85c6b5",
+        "type": "mongodb out",
+        "z": "59c5aa8651bd3ccf",
+        "mongodb": "a51ad6eea1b705cf",
+        "name": "MongoDB delete all",
+        "collection": "agg_3ch_measurements",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 370,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "f4835add30f49175",
+        "type": "inject",
+        "z": "59c5aa8651bd3ccf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "646e8f3abf9363fd"
+            ]
+        ]
+    }
+]
